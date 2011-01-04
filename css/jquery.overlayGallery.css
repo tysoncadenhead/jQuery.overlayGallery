@@ -1,8 +1,8 @@
 @media screen {
+	
 	.og- {
 		position: relative;
 		overflow: hidden;
-		border: solid 1px #333;
 	}
 	
 	#og-slides {
@@ -25,21 +25,19 @@
 	}
 	
 	#og-controls {
-		border-top: solid 1px #333;
-		background: #ccc;
+		background: #000;
 		background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.49, rgb(224,224,224)),
-    color-stop(0.91, rgb(204,204,204))
-);
-background-image: -moz-linear-gradient(
-    center bottom,
-    rgb(224,224,224) 49%,
-    rgb(204,204,204) 91%
-);
-
+		    linear,
+		    left bottom,
+		    left top,
+		    color-stop(0.5, rgb(36,36,36)),
+		    color-stop(0.5, rgb(54,54,54))
+		);
+		background-image: -moz-linear-gradient(
+		    center bottom,
+		    rgb(36,36,36) 50%,
+		    rgb(54,54,54) 50%
+		);
 		height: 30px;
 		width: 100%;
 		position: absolute;
@@ -48,7 +46,7 @@ background-image: -moz-linear-gradient(
 	}
 	
 	.og-sprites {
-		background-image: url("/Assets/Inventory/images/gallerySprites.png");
+		background-image: url("../img/gallerySprites.png");
 		background-repeat: no-repeat;
 		position: absolute;
 		bottom: 5px;
@@ -101,13 +99,12 @@ background-image: -moz-linear-gradient(
 	}
 	
 	#og-thumbs img {
-		margin-left: 5px;
-		margin-right: 5px;
-		margin-top: 10px;
+		margin-left: 13px;
+		margin-right: 13px;
+		margin-top: 25px;
 		opacity: 0.9;
 		filter: alpha(opacity=90);
 		cursor: pointer;
-		height: 75px;
 	}
 	
 	#og-thumbs img:hover, #og-thumbs img.current {
@@ -136,7 +133,7 @@ background-image: -moz-linear-gradient(
 	}
 	
 	.og-zoom-mask {
-	    background-image: url("/Assets/Inventory/images/gallerySprites.png");
+	    background-image: url("../img/gallerySprites.png");
 	    background-position: -94px 0;
 	    background-repeat: no-repeat;
 	    bottom: 50px;
@@ -150,7 +147,7 @@ background-image: -moz-linear-gradient(
 	#og-print-image {
 		display: none;
 	}
-
+	
 }
 
 @media print {
